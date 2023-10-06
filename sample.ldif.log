@@ -1,0 +1,103 @@
+version: 1 
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:6389
+#!DATE 2023-10-06T17:35:23.488
+dn: uid=Thomas.Martinez,ou=temp,dc=iamsecurity,dc=xyz
+objectclass: inetorgPerson
+objectclass: AccountObj
+objectclass: top
+cn: Alfred
+sn: Martinez
+uid: Thomas.Martinez
+mail: Thomas.Martinez@demoexample.com
+departmentNumber: Information Technology
+homePostalAddress: Americas
+accDisabled: FALSE
+employeeType: contractor
+
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:6389
+#!DATE 2023-10-06T17:35:23.510
+dn: uid=Dorothy.Robinson,ou=temp,dc=iamsecurity,dc=xyz
+objectclass: inetorgPerson
+objectclass: AccountObj
+objectclass: top
+cn: Dorothy
+sn: Robinson
+uid: Dorothy.Robinson
+mail: Dorothy.Robinson@demoexample.com
+departmentNumber: Information Technology
+homePostalAddress: Americas
+accDisabled: FALSE
+employeeType: contractor
+
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:6389
+#!DATE 2023-10-06T17:35:23.537
+dn: uid=Nancy.Lee,ou=temp,dc=iamsecurity,dc=xyz
+objectclass: inetorgPerson
+objectclass: AccountObj
+objectclass: top
+cn: Nancy
+sn: Lee
+uid: Nancy.Lee
+mail: Nancy.Lee@demoexample.com
+departmentNumber: Information Technology
+homePostalAddress: Americas
+accDisabled: FALSE
+employeeType: contractor
+
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:6389
+#!DATE 2023-10-06T17:35:23.550
+dn: uid=Paul.Walker,ou=temp,dc=iamsecurity,dc=xyz
+objectclass: inetorgPerson
+objectclass: AccountObj
+objectclass: top
+cn: Paul
+sn: Walker
+uid: Paul.Walker
+mail: Paul.Walker@demoexample.com
+departmentNumber: Information Technology
+homePostalAddress: Americas
+accDisabled: FALSE
+employeeType: contractor
+
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:6389
+#!DATE 2023-10-06T17:35:23.568
+dn: uid=Donald.Hernandez,ou=temp,dc=iamsecurity,dc=xyz
+objectclass: inetorgPerson
+objectclass: AccountObj
+objectclass: top
+cn: Donald
+sn: Hernandez
+uid: Donald.Hernandez
+mail: Donald.Hernandez@demoexample.com
+departmentNumber: Engineering
+homePostalAddress: Americas
+accDisabled: FALSE
+employeeType: emp
+
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:6389
+#!DATE 2023-10-06T17:35:23.593
+dn: uid=Helen.King,ou=temp,dc=iamsecurity,dc=xyz
+objectclass: inetorgPerson
+objectclass: AccountObj
+objectclass: top
+cn: Helen
+sn: King
+uid: Helen.King
+mail: Helen.King@demoexample.com
+departmentNumber: Engineering
+homePostalAddress: Americas
+accDisabled: FALSE
+employeeType: emp
+

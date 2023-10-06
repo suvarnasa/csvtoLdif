@@ -1,0 +1,7 @@
+firstName,lastName,fullName,email,departmentNumber,homePostalAddress,InactiveIdentity,employeeType
+Alfred,Martinez,Thomas.Martinez,Thomas.Martinez@demoexample.com,Information Technology,Americas,FALSE,contractor
+Dorothy,Robinson,Dorothy.Robinson,Dorothy.Robinson@demoexample.com,Information Technology,Americas,FALSE,contractor
+Nancy,Lee,Nancy.Lee,Nancy.Lee@demoexample.com,Information Technology,Americas,FALSE,contractor
+Paul,Walker,Paul.Walker,Paul.Walker@demoexample.com,Information Technology,Americas,FALSE,contractor
+Donald,Hernandez,Donald.Hernandez,Donald.Hernandez@demoexample.com,Engineering,Americas,FALSE,emp
+Helen,King,Helen.King,Helen.King@demoexample.com,Engineering,Americas,FALSE,emp
