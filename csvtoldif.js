@@ -44,7 +44,7 @@ function extractColumnNames(data){
     const cols = extractColumns(data) 
     //get column names from csv
     let ind = 0;
-    const propNames = Object.keys(mappings);    //get the property names in the mappings object
+    const propNames = Object.keys(mappings);    //get the property names (actual LDAP attrib names) in the mappings object
     while (ind < cols.length){
         let  attrib = cols[ind]                 
         attrib = attrib.toLowerCase();          //convert all the csv col names to small case
@@ -52,7 +52,7 @@ function extractColumnNames(data){
        
         if (propNames.includes(attrib)){        //check if mappings data has any of the csv col names
 //            console.log("replacing")
-            const{[attrib]:value} = mappings;   //internally replace csv col names with the mapping names as they are the values from ldif
+            const{[attrib]:value} = mappings;   //internally replace csv col names with the mapping data as they are the ldap attrib names
             cols[ind] = value;
 //            console.log(cols[ind]);
         }
@@ -104,7 +104,7 @@ function addRectoLdif(rec){
         while (index < multival.length){
             writer.write(`${key}: ${multival[index]}\n`);
             index ++;
-        }index
+        }
         
     }
     writer.write("\r\n");
