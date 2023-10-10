@@ -68,7 +68,7 @@ function createRecord(cols, data){
     
 
 function extractColumns(data){
-    cols = data.split(',');
+    cols = data.split(process.env.DELIM);
  //   console.log(cols);
     return cols;
 }
@@ -90,7 +90,7 @@ function mapEntries(colname, data){
 }
 function addRectoLdif(rec){
     writer.write("\r\n");
-    writer.write(`dn: ${uniqueattrib}=${rec.get(uniqueattrib)},${ldifEntry.dn}\n`); //whatever is the unique attrib, th edn will be crafted from it 
+    writer.write(`dn: ${uniqueattrib}=${rec.get(uniqueattrib)},${ldifEntry.dn}\n`); //whatever is the unique attrib, th rdn will be crafted from it 
     let index = 0; 
     while (index < ldifEntry.objectclass.length){
         writer.write(`objectclass:${ldifEntry.objectclass[index]}\n`);
@@ -98,7 +98,14 @@ function addRectoLdif(rec){
     }
 
     for (const [key, value] of rec) {
-        writer.write(`${key}: ${value}\n`);
+    //    console.log("value : "+value);
+        const multival = value.split(process.env.MULTIDELIM);   //for multivalued attributes split into array of values 
+        let index = 0; 
+        while (index < multival.length){
+            writer.write(`${key}: ${multival[index]}\n`);
+            index ++;
+        }index
+        
     }
     writer.write("\r\n");
 }

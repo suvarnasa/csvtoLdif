@@ -9,7 +9,7 @@ const ldifEntry={
         "AccountObj",
         "top"
     ], 
-    dn: "ou=temp,dc=iamsecurity,dc=xyz",  
+    dn: "ou=test,dc=iamsecurity,dc=xyz",  
 //  accExpired:"FALSE"
 
 }
